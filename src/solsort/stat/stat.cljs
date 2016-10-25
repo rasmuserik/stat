@@ -70,6 +70,7 @@
 (render
  [:div
   [:h1 "Stats last week"]
+  [:p "(very little amount of stats collected at the moment)"]
   [week-graph]
   [events-by-hits]
   ])
