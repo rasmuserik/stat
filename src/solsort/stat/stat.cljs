@@ -80,7 +80,7 @@
                (.toISOString)
                (.slice 0 13)
                (.replace "T" "-"))
-         f (str "http://incoming.solsort.com/" d ".json")]
+         f (str "https://incoming.solsort.com/" d ".json")]
      (go (db!
           [:stats d] (try
                 (<? (<ajax f))
