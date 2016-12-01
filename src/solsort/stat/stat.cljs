@@ -83,5 +83,5 @@
          f (str "https://incoming.solsort.com/" d ".json")]
      (go (db!
           [:stats d] (try
-                (<? (<ajax f))
+                (<? (<ajax f :credentials false))
                 (catch js/Error e {})))))))
